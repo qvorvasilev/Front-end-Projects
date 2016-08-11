@@ -1,0 +1,130 @@
+/*                          BASE                            */
+
+html, body, div, h1, h2, h3, h4, p, a, img, ul, li, form, footer, header, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+footer, header, section {
+    display: block;
+}
+@font-face {
+    font-family: Lato-Bold;
+    src: url("../fonts/Lato-Bold.woff");
+}
+@font-face {
+    font-family: Lato-Regular;
+    src: url("../fonts/Lato-Regular.woff");
+}
+body {
+    line-height: 1;
+    font-family: Lato-Regular,Lato-Bold;
+    font-size: 20px;
+    min-width: 390px;
+}
+ul {
+    list-style: none;
+}
+
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/*                          HEADER                          */
+
+.header {
+    /*background-image: url("../images/background-image.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
+    /*background-size: cover;*/
+    /*height: 600px;*/
+    background-color: #F5F8F8;
+    overflow: hidden;
+}
+.header h1{
+    float: left;
+    height: 40px;
+    width: 205px;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    text-indent: 200%;
+    margin: 31px 0;
+}
+
+
+/*                          FOOTER                          */
+.base-footer{
+    background-color: #F5F8F8;
+    height: 90px;
+}
+.base-footer .copy{
+    float: left;
+    margin-top: 37px;
+    font-size: 15px;
+    color: #989898;
+}
+
+.base-footer ul{
+    float: right;
+}
+.base-footer li{
+    display: inline-block;
+    background-color: #20201F;
+    margin-top: 25px;
+}
+.base-footer .social{
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    height: 42px;
+    width: 42px;
+}
+.base-footer .fb{
+    background-image: url("../images/facebook.png");
+}
+.base-footer .tw{
+    background-image: url("../images/twitter.png");
+}
+.base-footer .gp{
+    background-image: url("../images/googleplus.png");
+}
+.base-footer .in{
+    background-image: url("../images/linkedin.png");
+}
+
+
+/*
+------------------------------------------------------
+----------------------RESPONSIVE----------------------
+------------------------------------------------------
+*/
+/*(min-width: @screen-sm-min) and*/
+@media  (max-width: 1199px) {
+    .container{
+        width: 	970px;
+    }
+
+}
+
+@media  (max-width: 991px) {
+    .container{
+        width: 	750px;
+    }
+
+}
+
+@media  (max-width: 767px) {
+    .container{
+        width: 	auto;
+    }
+    .header h1{
+        float: none;
+        margin: 31px auto 31px auto;
+    }
+}
