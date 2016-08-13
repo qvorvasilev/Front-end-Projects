@@ -27,12 +27,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // CHECKBOX
     document.getElementById('select-outer-btn').addEventListener('click', function () {
+        var outer = document.getElementById('select-outer-btn');
         var property = document.getElementById('select-inner-btn');
         // console.log('property');
         if (property.style.float === 'left')
         {
+            outer.style.backgroundColor = '#2596F1';
             return property.style.float = 'right';
         }else{
+            outer.style.backgroundColor = 'grey';
             return property.style.float = 'left';
         }
     });

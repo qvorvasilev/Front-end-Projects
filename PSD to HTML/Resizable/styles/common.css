@@ -31,7 +31,7 @@ ul {
 
 
 .container{
-    width: 1140px;
+    width: 1100px;
     margin: 0 auto;
 }
 
@@ -62,6 +62,7 @@ ul {
     background-color: #F5F8F8;
     height: 90px;
 }
+
 .base-footer .copy{
     float: left;
     margin-top: 37px;
@@ -104,6 +105,13 @@ ul {
 ------------------------------------------------------
 */
 /*(min-width: @screen-sm-min) and*/
+
+@media (min-width: 1200px) {
+    .base-footer .container{
+        width: 1140px;
+    }
+}
+
 @media  (max-width: 1199px) {
     .container{
         width: 	970px;

@@ -11,13 +11,13 @@
 }
 .sub-header h2{
     padding-top: 220px;
-    margin-bottom: 35px;
-    font-size: 120px;
+    /*margin-bottom: 35px;*/
+    font-size: 110px;
     text-transform: uppercase;
-    font-family: Lato-Bold;
+    font-family: Lato-Regular, Lato-Bold;
 }
 .sub-header .line{
-    margin: 0 auto;
+    margin: 5px auto;
     height: 2px;
     width: 755px;
     background-image: url("../images/line.png");
@@ -26,7 +26,7 @@
 }
 .sub-header p{
     margin-top: 40px;
-    font-size: 20px;
+    font-size: 21px;
 }
 .sub-header p span{
     text-transform: uppercase;
@@ -37,13 +37,13 @@ a.button{
     border: 1px solid white;
     border-radius: 2px;
     color: white;
-    padding: 20px 32px;
+    padding: 17px 31px;
     display: inline-block;
     vertical-align: middle;
     text-decoration: none;
 }
 a.expand-arrow{
-    margin: 65px auto 60px auto;
+    margin: 115px auto 60px auto;
     display: block;
     height: 13px;
     width: 20px;
@@ -60,8 +60,9 @@ a.expand-arrow{
 .description h2{
     text-align: center;
     color: #2C384F;
-    font-size: 40px;
-    padding: 80px 0 40px 0;
+    font-size: 41px;
+    word-spacing: 2px;
+    padding: 80px 0 20px 0;
 }
 .description p{
     text-align: justify;
@@ -69,6 +70,7 @@ a.expand-arrow{
     text-align-last: center;
     color: #989898;
     padding-bottom: 114px;
+    line-height: 2rem;
 }
 
 /*---------------------------PERKS---------------------------*/
@@ -82,9 +84,15 @@ a.expand-arrow{
     padding: 65px 0;
 }
 .perks li{
-    width: 300px;
+    width: 285px;
     float: left;
-    margin: 0 40px;
+    margin-right: 110px;
+}
+.perks li:first-of-type{
+    margin-left:10px;
+}
+.perks li:last-of-type{
+    margin-right: 0;
 }
 .perks .icon-wrapper{
     width: 100px;
@@ -133,9 +141,11 @@ a.expand-arrow{
     padding-top: 80px;
     height: 820px;
 }
+
 .portfolio h2{
-    font-size: 40px;
+    font-size: 41px;
     text-align: center;
+    word-spacing: 5px;
 }
 .portfolio p{
     margin-top: 20px;
@@ -239,12 +249,14 @@ a.expand-arrow{
 .blur h2{
     margin: 0 auto;
     padding-top: 205px;
-    font-size: 40px;
+    font-size: 41px;
+    word-spacing: 4px;
     color: white;
 }
 .blur p{
     font-size: 15px;
     margin-top: 20px;
+    word-spacing: 2px;
     color: #989898;
 }
 .blur form{
@@ -253,7 +265,7 @@ a.expand-arrow{
 }
 .blur input{
     width: 515px;
-    padding: 25px 20px;
+    padding:20px;
     color: #989898;
     background-color: transparent;
     font-size: 15px;
@@ -290,7 +302,7 @@ a.expand-arrow{
     margin-top: 25px;
     background-color: transparent;
     color: white;
-    padding: 15px 50px;
+    padding: 13px 48px;
     display: inline-block;
     vertical-align: middle;
     text-decoration: none;
@@ -370,7 +382,9 @@ a.expand-arrow{
 */
 /*(min-width: @screen-sm-min) and*/
 @media (min-width: 1200px) {
-
+    .portfolio .container{
+        width: 1140px;
+    }
     .portfolio li:nth-child(3n+ 3){
         margin-right:0;
     }
@@ -440,11 +454,15 @@ a.expand-arrow{
     .perks{
         height: auto;
     }
+
     .perks li{
         float: none;
         display: block;
-        margin: 0 auto 40px auto;
+        margin: 0 auto 40px auto!important;
     }
+    /*.perks li:first-of-type{*/
+        /*margin: 0 auto;*/
+    /*}*/
     .perks li:last-of-type {
         margin: 0 auto;
     }
